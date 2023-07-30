@@ -13,7 +13,7 @@ else:
     print("invalid option")
     exit()
 
-state = input("Are you willing to provide root access one more time? [Y/n] ")
+state = input("Hello there! and thank you for using this program.\nThis program requires root access in order to work, are you willing to give root access? [Y/n] ")
 if(state == "y" or state == "Y"):
         print("Processing... Thanks for your trust! Again")
         t.sleep(3)
