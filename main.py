@@ -8,8 +8,7 @@ usr = os.getlogin()
 with open('/home/'+usr+'/fastubuntu/program_virginity.data') as f:
     pv = f.readline()
 if(pv == "first_time = true"):
-    state = input("Hello there! and thank you for using this program.\nThis program requires root access in order to work, are you willing to give root access? [Y/n] ")
-    if(state == "y" or state == "Y"):
+    state = input("Are you willing to provide root access one more time? [Y/n] ")
         print("Processing... Thanks for your trust!")
         t.sleep(3)
         os.system("rm /home/"+usr+"/fastubuntu/program_virginity.data")
