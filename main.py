@@ -80,10 +80,14 @@ elif(len(system.argv) == 3):
         f.write("preload = true")
         f.close()
         os.system("sudo apt install preload")
+        os.system("clear")
+        print("Preload is now functional!")
         exit()
     elif(system.argv[2] == "unset"):
         os.system("rm /home/"+usr+"/fastubuntu/sets.data")
         os.system("sudo apt remove preload")
+        os.system("clear")
+        print("Preload was successfuly unset!")
         exit()
     else:
         print("Unrecognized option!")
