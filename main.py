@@ -74,14 +74,14 @@ elif(system.argv[1] == "-h"):
     exit()
 elif(len(system.argv) == 3):
   if(system.argv[1] == "preload"):
-    if(system.argv[2] == "on"):
+    if(system.argv[2] == "set"):
         print("ignore unfatal errors!")
         f = open("/home/"+usr+"/sets.data", "a")
         f.write("preload = true")
         f.close()
         os.system("sudo apt install preload")
         exit()
-    elif(system.argv[2] == "off"):
+    elif(system.argv[2] == "unset"):
         os.system("rm /home/"+usr+"/fastubuntu/sets.data")
         os.system("sudo apt remove preload")
         exit()
