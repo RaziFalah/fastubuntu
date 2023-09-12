@@ -15,7 +15,7 @@ else:
 
 state = input("Hello there! and thank you for using this program.\nThis program requires root access in order to work, are you willing to give root access? [Y/n] ")
 if(state == "y" or state == "Y"):
-        print("Processing... Thanks for your trust! Again")
+        print("Processing... Thanks for your trust!")
         t.sleep(3)
         os.system("sudo chmod -R a+rwx /home/"+usr+"/fastubuntu")
         f = open("/home/"+usr+"/fastubuntu/program_virginity.data", "a")
