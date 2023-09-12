@@ -8,7 +8,7 @@ usr = os.getlogin()
 with open('/home/'+usr+'/fastubuntu/program_virginity.data') as f:
     pv = f.readline()
 if(pv == "first_time = true"):
-    state = input("Are you willing to provide root access? [Y/n] ")
+        state = input("Are you willing to provide root access? [Y/n] ")
         print("Processing... Thanks for your trust!")
         t.sleep(3)
         os.system("rm /home/"+usr+"/fastubuntu/program_virginity.data")
@@ -16,10 +16,10 @@ if(pv == "first_time = true"):
         f.write("first_time = false")
         f.close()
         pass
-    elif(state == "n" or state == "N"):
+elif(state == "n" or state == "N"):
         print("Understandable, goodbye then :)")
         exit()
-    else:
+else:
         print("Invalid option")
         exit()
 
