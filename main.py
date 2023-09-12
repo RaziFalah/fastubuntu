@@ -8,7 +8,7 @@ usr = os.getlogin()
 with open('/home/'+usr+'/fastubuntu/program_virginity.data') as f:
     pv = f.readline()
 if(pv == "first_time = true"):
-    state = input("Are you willing to provide root access one more time? [Y/n] ")
+    state = input("Are you willing to provide root access? [Y/n] ")
         print("Processing... Thanks for your trust!")
         t.sleep(3)
         os.system("rm /home/"+usr+"/fastubuntu/program_virginity.data")
@@ -67,7 +67,7 @@ elif(system.argv[1] == "-h"):
     
     fu : clean caches, thumbnail caches, apt caches ;removing unnecessary packages; update & upgrade apt if possible.
     fu [--allow-logs-cleansing] : All the above but also clear [var/logs] (Not recommended for everyone)
-    fu [preload] [set/unset] : preload frequencyly used applications
+    fu [preload] [set/unset] : preload frequently used applications
     
 
     """)
